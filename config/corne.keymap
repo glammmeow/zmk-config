@@ -44,12 +44,12 @@
 // |      |  7  |  8  |  9  |  $  |  !  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // |      |  4  |  5  |  6  |  %  |  @  |   |  -  |  =  |  [  |  ]  |  \  |  "   |
 // |      |  1  |  2  |  3  |  .  |  #  |   |  _  |  +  |  {  |  }  |     |      |
-//                    |  0  |     |     |   | ENT |     | ALT |
+//                    |  0  |     |     |   |     |     |     |
                         bindings = <
-   &trans &trans   &trans &trans   &trans   &trans      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &trans &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &trans
-   &trans &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans   &trans
-                         &trans     &trans  &trans      &trans   &trans    &trans
+   &trans &kp_N7   &kp_N8 &kp_N9   &kp DLLR   &kp EXCL      &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+   &trans &kp_N4   &kp_N5 &kp_N6   &kp PRCNT   &kp AT      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &trans
+   &trans &kp_N1   &kp_N2 &kp_N3   &kp DOT   &kp POUND     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans   &trans
+                         &kp_N0    &trans  &trans      &trans   &trans    &trans
                         >;
                 };
         };
