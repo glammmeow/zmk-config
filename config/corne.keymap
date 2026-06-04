@@ -36,9 +36,9 @@
 // | CLBLU|     |     |     |     |     |   |     |     |     |     |     |VOL DN|
 //                    |     |     |     |   |     |     |     |
                  bindings = <
-   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans   &kp C_MUTE
+   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &kp C_MUTE
    &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &kp C_VOL_UP
-   &bt BT_CLR_ALL  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans         &kp C_VOL_DN
+   &bt BT_CLR_ALL  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans    &kp C_VOL_DN
                              &trans &trans   &trans      &trans &trans   &trans
                         >;
                 };
@@ -50,9 +50,9 @@
 // |      |     |     |     |     |     |   |  1  |  2  |  3  |     |     |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &trans  &trans &trans  &trans  &trans     &kp N7 &kp N8  &kp N9 &kp N0 &trans &kp BSPC
-   &trans &trans  &trans &trans  &trans  &trans     &kp N4 &kp N5 &kp N6  &trans &trans &trans
-   &trans &trans  &trans &trans  &trans  &trans     &kp N1 &kp N2 &kp N3  &trans &trans  &trans
+   &trans &trans  &trans &trans  &trans  &trans     &trans &kp N7 &kp N8  &kp N9 &kp N0 &kp BSPC
+   &trans &trans  &trans &trans  &trans  &trans     &trans &kp N4 &kp N5  &kp N6 &trans &trans
+   &trans &trans  &trans &trans  &trans  &trans     &trans &kp N1 &kp N2  &kp N3 &trans  &trans
                          &trans    &trans  &trans      &trans   &trans    &trans
                         >;
                 };
