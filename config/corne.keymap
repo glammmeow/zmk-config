@@ -33,13 +33,13 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |     | PGUP|  UP |PGDN |     | MUTE |
 // |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |     |VOL UP|
-// | CLBLU|     |     |     |     |     |   |     |     |     |     |     |VOL DN|
-//                    |     |     |     |   |     |     |     |
+// | CAP  |     |     |     |     |     |   |     |     |     |     |     |VOL DN|
+//                    |     |     |     |   | CTL | ALT | DEL |
                  bindings = <
    &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &kp C_MUTE
    &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &kp C_VOL_UP
-   &bt BT_CLR_ALL  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans    &kp C_VOL_DN
-                             &trans &trans   &trans      &trans &trans   &trans
+   &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans    &kp C_VOL_DN
+                             &trans &trans   &trans      &kp LCTRL &kp LALT  &kp DEL
                         >;
                 };
 
@@ -61,12 +61,12 @@
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // |      |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  "   |
-// |      |     |     |     |     |     |   |  _  |  +  |  {  |  }  |     |      |
+// |reset |     |     |     |     |     |   |  _  |  +  |  {  |  }  |     |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &trans &trans   &trans &trans  &trans   &trans     &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
    &trans &trans   &trans &trans  &trans   &trans     &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &trans
-   &trans &trans   &trans &trans  &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans   &trans
+   &bt BT_CLR_ALL &trans   &trans &trans  &trans   &trans     &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans   &trans
                          &trans    &trans  &trans      &trans   &trans    &trans
                         >;
                   };
