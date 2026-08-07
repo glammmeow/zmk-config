@@ -31,14 +31,14 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |     |     |     |     |     |   |     | PGUP|  UP |PGDN |     | STL  |
-// |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |     | STR  |
-// | CAP  |     |     |     |     |     |   |     |     |     |     |     |      |
+// |  ESC |     |     |     |     |     |   |     | PGUP|  UP |PGDN |     |      |
+// |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |     |      |
+// | CAP  |     |     |     |     |     |   |     | GUL | GUR |     |     |      |
 //                    |     |     |     |   | CTL | ALT | DEL |
                  bindings = <
-   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &kp LG(RC(LS(LEFT)))
-   &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &kp LG(RC(LS(RIGHT)))
-   &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans    &trans
+   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &trans
+   &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &trans
+   &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &kp RG(LS(LEFT))  &trans &kp RG(LS(RIGHT))   &trans    &trans
                              &trans &trans   &trans      &kp LCTRL &kp LALT  &kp DEL
                         >;
                 };
