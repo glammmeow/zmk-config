@@ -33,12 +33,12 @@
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |     | PGUP|  UP |PGDN |     |      |
 // |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |     |      |
-// | CAP  |     |     |     |     |     |   |     | GUL | GUR |     |     |      |
+// | CAP  |     |     |     |     |     |   |     | GUL | TAB |     |     |      |
 //                    |     |     |     |   | CTL | ALT | DEL |
                  bindings = <
    &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &trans
    &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &trans
-   &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &kp RG(LS(LEFT))  &trans &kp RG(LS(RIGHT))   &trans    &trans
+   &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &kp RG(LS(LEFT))  &kp TAB &trans   &trans    &trans
                              &trans &trans   &trans      &kp LCTRL &kp LALT  &kp DEL
                         >;
                 };
