@@ -32,12 +32,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |     |     |     |     |     |   |     | PGUP|  UP |PGDN |     | STL  |
-// |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |WINC | STR  |
+// |      |     |     |     |     |     |   |     |LEFT | DWN | RIT |     | STR  |
 // | CAP  |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    |     |     |     |   | CTL | ALT | DEL |
                  bindings = <
-   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &kp RS(&kp LEFT)
-   &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &kp LG(CTRL)   &kp RS(&kp RIGHT)
+   &kp ESC &kp LG(R)   &trans &trans   &trans   &trans      &trans  &kp PG_UP   &kp UP &kp PG_DN   &trans  &kp LG(RC(LS(LEFT)))
+   &trans  &trans   &trans &trans   &trans   &trans      &trans  &kp LEFT   &kp DOWN &kp RIGHT  &trans   &kp LG(RC(LS(RIGHT)))
    &kp CAPS  &trans &trans &trans   &trans   &trans      &trans  &trans   &trans &trans   &trans    &trans
                              &trans &trans   &trans      &kp LCTRL &kp LALT  &kp DEL
                         >;
